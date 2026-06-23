@@ -1,20 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Game Design Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grigoris Maltezos | Game Design Portfolio</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:#121417;
+    color:#ECECEC;
+    font-family:Segoe UI, sans-serif;
+}
+
+header{
+    padding:100px 10%;
+    background:linear-gradient(180deg,#191c22,#121417);
+}
+
+h1{
+    margin:0;
+    font-size:60px;
+    font-weight:700;
+}
+
+.subtitle{
+    color:#A9AFBB;
+    font-size:22px;
+    margin-top:15px;
+}
+
+.description{
+    margin-top:30px;
+    max-width:800px;
+    line-height:1.7;
+    color:#D6D9DF;
+}
+
+.section{
+    padding:70px 10%;
+}
+
+.section-title{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1B1F26;
+    border:1px solid #2B313B;
+    border-radius:20px;
+    padding:30px;
+    transition:0.2s;
+    text-decoration:none;
+    color:white;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:#5E88FF;
+}
+
+.card-title{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.card-description{
+    color:#B9C0CA;
+    line-height:1.6;
+}
+
+footer{
+    margin-top:80px;
+    padding:40px 10%;
+    color:#8A909B;
+    border-top:1px solid #262B34;
+}
+
+.link{
+    color:#87A7FF;
+    text-decoration:none;
+}
+
+.link:hover{
+    text-decoration:underline;
+}
+
+</style>
 </head>
+
 <body>
-    <h1>Game Design Portfolio</h1>
 
-    <h2>Projects</h2>
+<header>
 
-    <ul>
-        <li><a href="#">Echo System</a></li>
-        <li><a href="#">Gameplay</a></li>
-        <li><a href="#">Enemies</a></li>
-        <li><a href="#">UI / UX</a></li>
-        <li><a href="#">Hub & NPCs</a></li>
-        <li><a href="#">Art Direction</a></li>
-    </ul>
+<h1>Grigoris Maltezos</h1>
+
+<div class="subtitle">
+Game Design Portfolio
+</div>
+
+<div class="description">
+Software Development graduate with a passion for gameplay systems, player experience, and technical design.
+Currently collaborating on an independent game project while developing personal game concepts and design documentation.
+</div>
+
+</header>
+
+
+<section class="section">
+
+<div class="section-title">
+Projects
+</div>
+
+<div class="grid">
+
+<a class="card" href="#">
+<div class="card-title">
+Echo System
+</div>
+
+<div class="card-description">
+Extraction shooter concept focused on progression, risk versus reward, and player expression.
+</div>
+</a>
+
+
+<a class="card" href="#">
+<div class="card-title">
+Gameplay
+</div>
+
+<div class="card-description">
+Core loop, mechanics, progression systems and design pillars.
+</div>
+</a>
+
+
+<a class="card" href="#">
+<div class="card-title">
+Enemies
+</div>
+
+<div class="card-description">
+Enemy factions, creatures, behavior patterns and combat roles.
+</div>
+</a>
+
+
+<a class="card" href="#">
+<div class="card-title">
+Hub & NPCs
+</div>
+
+<div class="card-description">
+Social systems, progression and player interactions.
+</div>
+</a>
+
+
+<a class="card" href="#">
+<div class="card-title">
+UI / UX
+</div>
+
+<div class="card-description">
+Interfaces, menus and player experience considerations.
+</div>
+</a>
+
+
+<a class="card" href="#">
+<div class="card-title">
+Art Direction
+</div>
+
+<div class="card-description">
+Mood, atmosphere, inspirations and visual identity.
+</div>
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+Current project:
+<a class="link"
+href="https://brainmated.github.io/Mushroom-Game/">
+Mushroom Game Wiki
+</a>
+
+<br><br>
+
+GitHub:
+<a class="link"
+href="https://github.com/GregoryMaltezos">
+GregoryMaltezos
+</a>
+
+<br>
+
+LinkedIn:
+<a class="link"
+href="https://www.linkedin.com/in/gregory-maltezos/">
+gregory-maltezos
+</a>
+
+</footer>
+
 </body>
 </html>
