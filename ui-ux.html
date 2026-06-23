@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UI / UX | Echoes</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #111318;
+    color: #ECECEC;
+    font-family: Segoe UI, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px;
+}
+
+a {
+    color: #8FB0FF;
+    text-decoration: none;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #B8C0CC;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    max-width: 900px;
+}
+
+.card {
+    background: #1B1F29;
+    border: 1px solid #2D3442;
+    border-radius: 20px;
+    padding: 32px;
+    margin-bottom: 28px;
+}
+
+.card:hover {
+    border-color: #7AA2FF;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.card p,
+.card li {
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+.quote {
+    margin-top: 28px;
+    background: #141821;
+    border-left: 4px solid #7AA2FF;
+    padding: 28px;
+    border-radius: 14px;
+    color: #D7DDE7;
+    font-style: italic;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="index.html">← Back to Home</a>
+
+<h1>UI / UX</h1>
+
+<p class="intro">
+The UI/UX direction for Echoes prioritizes readability, tension, and fast decision-making. Information is intentionally limited during runs so the player remains aware, uncertain, and responsible for interpreting the world through combat feedback, audio cues, environmental signals, and compact interface elements.
+</p>
+
+<div class="card">
+<h2>In-Run HUD</h2>
+
+<p>
+The in-run HUD displays only the information required for moment-to-moment decisions.
+</p>
+
+<ul>
+<li><strong>Health and Stamina:</strong> shown at all times, with stamina treated as critical due to its role in dodging, attacking, blocking, and combat pacing.</li>
+<li><strong>Corruption:</strong> shown as a separate meter that fills through death, instability, and certain abilities.</li>
+<li><strong>Visual Corruption Feedback:</strong> screen distortion increases as corruption rises, reinforcing danger without relying only on numbers.</li>
+<li><strong>Echo Attunement:</strong> displayed as a compact indicator tied to the currently equipped weapon.</li>
+<li><strong>Ammo, Consumables, and Cooldowns:</strong> positioned near the reticle or lower screen edge to reduce eye travel.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Combat Readability</h2>
+
+<p>
+Combat feedback is primarily communicated through animation, sound, and character reactions rather than excessive UI elements.
+</p>
+
+<ul>
+<li>Enemy attacks use animation and audio tells.</li>
+<li>Hit reactions, stamina drain, and posture changes provide feedback.</li>
+<li>Bosses and elites use clear telegraphs for heavy attacks.</li>
+<li>Telegraphs should be readable but not overly forgiving.</li>
+<li>Damage direction indicators appear briefly when the player is hit from off-screen.</li>
+</ul>
+
+<p>
+The UI avoids excessive warning icons to preserve tension and keep combat grounded.
+</p>
+</div>
+
+<div class="card">
+<h2>Extraction UI</h2>
+
+<p>
+Extraction information is designed to become more visible only when it becomes relevant.
+</p>
+
+<ul>
+<li>Extraction zones are shown on the map but not constantly highlighted on the HUD.</li>
+<li>Entering an extraction area displays a clear extraction timer.</li>
+<li>The timer becomes more visually aggressive as extraction progresses.</li>
+<li>Sound cues and subtle screen effects reinforce urgency.</li>
+<li>If enemies or players interrupt extraction, failure states are communicated clearly without pausing gameplay.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Map & Navigation</h2>
+
+<p>
+The map is functional, minimal, and focused on player planning rather than omniscient information.
+</p>
+
+<ul>
+<li>Shows major landmarks, extraction nodes, and active or completed objectives.</li>
+<li>Enemy locations are not shown in real time.</li>
+<li>Audio cues and environmental signals are the primary tools for awareness.</li>
+<li>Points of interest appear only after discovery or quest marking.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Menus & Meta UI</h2>
+
+<p>
+Menus are designed to be clean, fast, and readable between runs.
+</p>
+
+<ul>
+<li>The loadout screen clearly shows weapon Echo progress, gear stats, and corruption risk.</li>
+<li>Quest UI focuses on objectives and rewards rather than long narrative text.</li>
+<li>NPC interaction panels use short dialogue and clear action buttons.</li>
+<li>Hub menus prioritize preparation, upgrades, crafting, and Echo management.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>UX Philosophy</h2>
+
+<ul>
+<li>Limit in-run information to preserve tension and uncertainty.</li>
+<li>Make high-risk actions such as extraction, boss summoning, and corruption cleansing clearly confirmed.</li>
+<li>Prioritize function over decorative fantasy styling.</li>
+<li>Use visual style to support clarity rather than overwhelm the player.</li>
+<li>Ensure players understand consequences before committing to irreversible or high-risk choices.</li>
+</ul>
+
+<div class="quote">
+The interface should not make the player feel safe. It should make the danger readable.
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
