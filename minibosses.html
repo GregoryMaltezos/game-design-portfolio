@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minibosses | Echoes</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #111318;
+    color: #ECECEC;
+    font-family: Segoe UI, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px;
+}
+
+a {
+    color: #8FB0FF;
+    text-decoration: none;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #B8C0CC;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    max-width: 900px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #1B1F29;
+    border: 1px solid #2D3442;
+    border-radius: 20px;
+    padding: 32px;
+}
+
+.card:hover {
+    border-color: #7AA2FF;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.card p,
+.card li {
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+.tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #8FB0FF;
+    font-weight: 600;
+}
+
+.full-card {
+    margin-top: 28px;
+}
+
+.quote {
+    margin-top: 28px;
+    background: #141821;
+    border-left: 4px solid #7AA2FF;
+    padding: 28px;
+    border-radius: 14px;
+    color: #D7DDE7;
+    font-style: italic;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="enemies.html">← Back to Enemy Design</a>
+
+<h1>Minibosses</h1>
+
+<p class="intro">
+Minibosses are rare, stronger enemies that appear in specific zones as optional mid-run challenges. They provide a noticeable difficulty increase compared to elites, reward high-tier loot or Echo progression materials, and encourage strategic decision-making without blocking run completion.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<span class="tag">Forest Miniboss</span>
+<h2>Thornbound Matriarch</h2>
+<p>
+A forest-themed miniboss covered in living vines and thorns.
+</p>
+<ul>
+<li>Uses area-of-effect strikes that damage and slow the player.</li>
+<li>Forces careful positioning and movement planning.</li>
+<li>Is most dangerous in dense foliage or narrow clearings.</li>
+<li>Open areas allow players to maintain distance and control the fight.</li>
+</ul>
+</div>
+
+<div class="card">
+<span class="tag">Volcanic Miniboss</span>
+<h2>Ashbound Goliath</h2>
+<p>
+A volcanic miniboss built around heavy melee pressure and shockwave attacks.
+</p>
+<ul>
+<li>Uses heavy strikes and ground stomps.</li>
+<li>Creates shockwaves that punish poor timing.</li>
+<li>Becomes more dangerous near lava hazards or confined corridors.</li>
+<li>Reinforces stamina management, dodging, and environmental awareness.</li>
+</ul>
+</div>
+
+<div class="card">
+<span class="tag">Temple Miniboss</span>
+<h2>Hollow Prophet</h2>
+<p>
+A temple-themed miniboss that combines ranged Echo projectiles with area-based corruption effects.
+</p>
+<ul>
+<li>Pressures players from range.</li>
+<li>Uses corruption zones to limit safe movement.</li>
+<li>Is harder to fight in enclosed temple chambers.</li>
+<li>Teaches spatial awareness, crowd control, and attack pattern reading.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="card full-card">
+<h2>Encounter Composition</h2>
+
+<p>
+Minibosses can be combined with common or elite enemies to create layered encounters. These combinations increase risk through positioning, pressure, and target priority rather than unfair difficulty spikes.
+</p>
+
+<p>
+This allows miniboss fights to feel more dynamic while still remaining readable and manageable for skilled players.
+</p>
+</div>
+
+<div class="card full-card">
+<h2>Design Purpose</h2>
+
+<ul>
+<li>Create optional skill checks during a run.</li>
+<li>Reward exploration and thoughtful engagement.</li>
+<li>Break up pacing between common encounters and major boss threats.</li>
+<li>Provide high-tier loot or Echo progression materials.</li>
+<li>Prepare players for Ultimate Challenges without requiring participation.</li>
+</ul>
+</div>
+
+<div class="quote">
+Minibosses are designed as optional pressure peaks: dangerous enough to matter, but never mandatory for completing a run.
+</div>
+
+</div>
+
+</body>
+</html>
