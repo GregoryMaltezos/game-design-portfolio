@@ -6,7 +6,9 @@
 <title>Enemy Design | Echoes</title>
 
 <style>
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -46,7 +48,7 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
     gap: 24px;
 }
 
@@ -55,15 +57,9 @@ h1 {
     border: 1px solid #2D3442;
     border-radius: 20px;
     padding: 32px;
-    transition: 0.2s;
+    transition: .2s;
 }
-<a class="card" href="enemy-tree.html">
-<h2>Enemy Hierarchy</h2>
-<p>
-A structural overview of enemy categories, escalation paths, boss types, and late-game Echo encounters.
-</p>
-<span class="read-more">Read More →</span>
-</a>
+
 .card:hover {
     transform: translateY(-4px);
     border-color: #7AA2FF;
@@ -96,18 +92,21 @@ A structural overview of enemy categories, escalation paths, boss types, and lat
     font-style: italic;
 }
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<a class="back" href="index.html">← Back to Home</a>
+<a class="back" href="index.html">
+← Back to Home
+</a>
 
 <h1>Enemy Design</h1>
 
 <p class="intro">
-The Enemy Design section defines the threats the player encounters, how they behave, and how they interact with Echoes' combat, extraction, and risk/reward systems. Enemies are designed to teach mechanics, escalate tension, create meaningful choices, and produce memorable encounters without relying only on narrative exposition.
+The Enemy Design section defines the threats players encounter, how they behave, and how they interact with the combat, extraction, and progression systems. Enemies are designed to teach mechanics, escalate tension, and create memorable encounters while reinforcing the core loop and risk-versus-reward philosophy.
 </p>
 
 <div class="grid">
@@ -115,7 +114,7 @@ The Enemy Design section defines the threats the player encounters, how they beh
 <a class="card" href="common-enemies.html">
 <h2>Common Enemies</h2>
 <p>
-Baseline threats encountered frequently during runs. They establish zone rhythm, teach combat fundamentals, and encourage positioning and resource management.
+Baseline threats encountered frequently during runs. They establish combat rhythm, teach fundamentals, and encourage positioning and resource management.
 </p>
 <span class="read-more">Read More →</span>
 </a>
@@ -123,7 +122,7 @@ Baseline threats encountered frequently during runs. They establish zone rhythm,
 <a class="card" href="elite-enemies.html">
 <h2>Elite Enemies</h2>
 <p>
-Stronger, high-risk enemies that appear less often. Elites create deliberate tension spikes, optional challenges, and localized risk/reward moments.
+Stronger, less frequent enemies that create localized spikes in tension and reward players willing to take risks.
 </p>
 <span class="read-more">Read More →</span>
 </a>
@@ -131,7 +130,7 @@ Stronger, high-risk enemies that appear less often. Elites create deliberate ten
 <a class="card" href="minibosses.html">
 <h2>Minibosses</h2>
 <p>
-Rare thematic enemies tied to specific zones. Minibosses break pacing, provide significant loot, and act as optional mini-climaxes.
+Rare optional encounters that serve as mid-run skill checks and provide high-value rewards.
 </p>
 <span class="read-more">Read More →</span>
 </a>
@@ -139,15 +138,23 @@ Rare thematic enemies tied to specific zones. Minibosses break pacing, provide s
 <a class="card" href="uber-boss.html">
 <h2>Uber Boss</h2>
 <p>
-One per map, designed as the run-ending challenge. The Uber Boss is highly telegraphed, extremely dangerous, and grants instant extraction and high-tier rewards.
+A zone-level hyper boss summoned through a mini quest. High risk, high visibility, and high reward.
 </p>
 <span class="read-more">Read More →</span>
 </a>
 
 <a class="card" href="player-specific-echo.html">
-<h2>Player-Specific Echo Encounters</h2>
+<h2>Player-Specific Echo Bosses</h2>
 <p>
-Late-game mastery encounters tied to the player's Echo progression, designed to test archetype mastery and provide prestige-based rewards.
+Late-game mastery encounters tied directly to Echo progression and designed around prestige rather than power.
+</p>
+<span class="read-more">Read More →</span>
+</a>
+
+<a class="card" href="enemy-tree.html">
+<h2>Enemy Hierarchy</h2>
+<p>
+A structural overview of enemy categories, escalation paths, boss types, and late-game Echo encounters.
 </p>
 <span class="read-more">Read More →</span>
 </a>
@@ -155,28 +162,28 @@ Late-game mastery encounters tied to the player's Echo progression, designed to 
 <div class="card">
 <h2>Corruption Variants</h2>
 <p>
-Any enemy can appear in a corruption-infused state, altering behavior, increasing threat, and rewarding higher-tier Echo progression. These variants create replay variety and reinforce the unstable nature of the world.
+Any enemy can appear in a corruption-infused state, altering behavior and increasing danger. Corruption variants create replay variety and reinforce the world's instability.
 </p>
 </div>
 
 <div class="card">
 <h2>Human / Faction Enemies</h2>
 <p>
-Rival extractors, cultists, or scavengers that behave more like players. They increase unpredictability and simulate emergent PvPvE scenarios.
+Rival extractors, cultists, and scavengers create unpredictable encounters and reinforce the living nature of the world.
 </p>
 </div>
 
 <div class="card">
 <h2>Design Purpose</h2>
 <p>
-Enemies support the core loop by creating pressure during exploration, forcing tactical combat decisions, threatening extraction, and rewarding players who understand positioning, timing, and risk.
+Enemies are pressure tools. They support exploration, threaten extraction, encourage tactical combat, and shape the player's decisions throughout every run.
 </p>
 </div>
 
 </div>
 
 <div class="quote-card">
-Enemies are not just obstacles. They are pressure tools that shape the player’s decisions during a run.
+Enemies are not simply obstacles. They are the pressure that gives meaning to the player's decisions.
 </div>
 
 </div>
