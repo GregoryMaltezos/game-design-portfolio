@@ -1,142 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<title>Core Loop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Loop | Echoes</title>
 
 <style>
-
-body{
-margin:0;
-background:#111318;
-color:#ECECEC;
-font-family:Segoe UI,sans-serif;
+* {
+    box-sizing: border-box;
 }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:60px;
+body {
+    margin: 0;
+    background: #111318;
+    color: #ECECEC;
+    font-family: Segoe UI, sans-serif;
 }
 
-a{
-color:#8FB0FF;
-text-decoration:none;
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px;
 }
 
-.card{
-background:#1B1F29;
-border:1px solid #2D3442;
-border-radius:20px;
-padding:35px;
-margin-bottom:30px;
+a {
+    color: #8FB0FF;
+    text-decoration: none;
 }
 
-.card:hover{
-border-color:#7AA2FF;
+.back {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 18px;
 }
 
-p, li{
-color:#B8C0CC;
-line-height:1.8;
+h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
 }
 
-h1{
-font-size:50px;
+.intro {
+    color: #B8C0CC;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    max-width: 850px;
 }
 
+.card {
+    background: #1B1F29;
+    border: 1px solid #2D3442;
+    border-radius: 20px;
+    padding: 32px;
+    margin-bottom: 28px;
+}
+
+.card:hover {
+    border-color: #7AA2FF;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.card h3 {
+    margin-top: 28px;
+    color: #DDE4F0;
+}
+
+.card p,
+.card li {
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+.quote {
+    margin-top: 22px;
+    padding: 22px;
+    background: #141821;
+    border-left: 4px solid #7AA2FF;
+    border-radius: 12px;
+    font-style: italic;
+    color: #D7DDE7;
+}
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-<a href="gameplay.html">
-← Back to Gameplay Systems
-</a>
+<a class="back" href="gameplay.html">← Back to Gameplay Systems</a>
 
 <h1>Core Loop</h1>
 
-<p>
-The Core Loop represents the central player experience. Every run follows a cycle of preparation, combat, loot collection, extraction and evolution.
+<p class="intro">
+The Core Loop represents the central player experience. Every run follows a cycle of preparation, combat, loot collection, extraction, and evolution. This loop is the backbone of gameplay, ensuring that every decision matters while reinforcing the Echo progression system.
 </p>
 
 <div class="card">
+<h2>1. Prepare (Hub Phase)</h2>
 
-<h2>Prepare</h2>
+<p>
+Before entering a zone, players prepare for the expedition from the hub.
+</p>
 
 <ul>
-<li>Select weapons, gear and consumables.</li>
-<li>Craft items and complete side objectives.</li>
-<li>Plan strategy based on the zone.</li>
+<li>Select loadout: weapons, gear, consumables, and quests.</li>
+<li>Apply temporary buffs, craft items, or complete side objectives.</li>
+<li>Plan a general strategy based on known zone characteristics.</li>
 </ul>
 
+<p>
+The hub acts as a safe preparation space where players decide how much risk they are willing to take into the next run.
+</p>
 </div>
 
 <div class="card">
+<h2>2. Choose Spawn Area & Enter Game</h2>
 
-<h2>Enter Zone</h2>
+<p>
+Players select a general area of the zone rather than a fixed spawn point.
+</p>
 
 <ul>
-<li>Choose a spawn area.</li>
-<li>Semi-safe spawn locations.</li>
-<li>Occasional dangerous spawns create tension.</li>
+<li>The system attempts to spawn the player in a semi-safe location.</li>
+<li>Spawn locations remain uncertain to avoid fully predictable runs.</li>
 </ul>
 
+<h3>System Malfunction Mechanic</h3>
+
+<p>
+Occasionally, the spawn system can malfunction and place players near higher-risk elements.
+</p>
+
+<ul>
+<li>Players may spawn near enemies or hostile environmental conditions.</li>
+<li>Players may spawn near enemy players who are full HP and have not been in combat recently.</li>
+<li>These malfunctions create tension and reinforce the unstable nature of the world.</li>
+</ul>
 </div>
 
 <div class="card">
+<h2>3. Fight & Exploration</h2>
 
-<h2>Fight & Explore</h2>
+<p>
+Players explore the zone, fight AI enemies, react to environmental hazards, and search for valuable resources.
+</p>
+
+<h3>Special / Elite Enemies</h3>
 
 <ul>
-<li>Fight AI enemies.</li>
-<li>Encounter elite enemies.</li>
-<li>Search for valuable loot.</li>
-<li>Risk revealing your position.</li>
+<li>Optional higher-tier enemies that drop better loot or unique consumables.</li>
+<li>Defeating them may trigger global alerts, such as shockwaves or sounds detectable by other players.</li>
+<li>This creates a tradeoff between reward value and positional exposure.</li>
 </ul>
 
+<h3>Uber Boss</h3>
+
+<ul>
+<li>One optional Uber Boss can appear per zone.</li>
+<li>Defeating the boss grants an immediate extraction opportunity and high-tier rewards.</li>
+<li>The encounter balances high risk with guaranteed reward while preserving combat tension.</li>
+</ul>
 </div>
 
 <div class="card">
+<h2>4. Loot</h2>
 
-<h2>Loot</h2>
+<p>
+Players collect weapons, consumables, gear, and resources during the run.
+</p>
 
 <ul>
-<li>Gather resources and equipment.</li>
-<li>Greed increases risk.</li>
+<li>Loot from elites and bosses offers stronger rewards but increases the risk of continuing.</li>
+<li>All collected loot remains unsecured until the player extracts successfully.</li>
+<li>The more valuable the inventory becomes, the harder the extraction decision becomes.</li>
 </ul>
-
 </div>
 
 <div class="card">
+<h2>5. Extraction</h2>
 
-<h2>Extract</h2>
+<p>
+Players must navigate to an extraction zone and leave safely.
+</p>
 
 <ul>
-<li>Reach extraction points.</li>
-<li>Secure your progress.</li>
-<li>Death before extraction means losses.</li>
+<li>Successful extraction locks in Echo progression, stat upgrades, and collected loot.</li>
+<li>Dying or failing extraction may result in corruption, mutations, loot loss, or other long-term consequences.</li>
+<li>Extraction is the main pressure point of the run, forcing players to decide when to stop pushing forward.</li>
 </ul>
 
+<div class="quote">
+“Do I leave now with what I have, or risk everything for something better?”
+</div>
 </div>
 
 <div class="card">
+<h2>6. Upgrade & Hub Activities</h2>
 
-<h2>Upgrade</h2>
+<p>
+After extraction, players return to the hub and convert the run’s outcome into long-term progression.
+</p>
 
 <ul>
-<li>Develop Echoes.</li>
-<li>Improve the hub.</li>
-<li>Prepare for the next run.</li>
+<li>Spend resources to upgrade gear or craft items.</li>
+<li>Purge, respecialize, or develop Echoes.</li>
+<li>Prepare for the next run with improved strategy and knowledge.</li>
 </ul>
 
+<p>
+Each completed run gives the player more information, more options, and stronger future potential.
+</p>
 </div>
 
 </div>
 
 </body>
-
 </html>
