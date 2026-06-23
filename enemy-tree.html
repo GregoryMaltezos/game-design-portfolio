@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enemy Hierarchy | Echoes</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #111318;
+    color: #ECECEC;
+    font-family: Segoe UI, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px;
+}
+
+a {
+    color: #8FB0FF;
+    text-decoration: none;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #B8C0CC;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 900px;
+}
+
+.tree {
+    background: #1B1F29;
+    border: 1px solid #2D3442;
+    border-radius: 20px;
+    padding: 32px;
+    overflow-x: auto;
+}
+
+pre {
+    color: #B8C0CC;
+    line-height: 1.7;
+    font-size: 16px;
+    white-space: pre;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="enemies.html">← Back to Enemy Design</a>
+
+<h1>Enemy Hierarchy</h1>
+
+<p class="intro">
+This hierarchy shows how enemy types are organized across common threats, elite encounters, minibosses, Uber Bosses, and late-game player-specific Echo challenges.
+</p>
+
+<div class="tree">
+<pre>
+Enemies
+├─ Common Enemies
+│  ├─ Shamblers
+│  ├─ Skulkers
+│  ├─ Spinecasters
+│  └─ Thrash Beasts
+│
+├─ Elite Enemies
+│  ├─ Guardian Wraiths
+│  ├─ Corrupted Brutes
+│  └─ Shrieking Nodes
+│
+├─ Minibosses
+│  ├─ Thornbound Matriarch
+│  ├─ Ashbound Goliath
+│  └─ Hollow Prophet
+│
+├─ Uber Boss
+│  ├─ Summoned through a mini quest
+│  ├─ One summon item per run
+│  ├─ Cannot be summoned in confined spaces
+│  └─ Defeating it opens instant extraction and grants high-tier loot
+│
+└─ Player-Specific Echo Bosses
+   ├─ Ultimate Challenge
+   │  ├─ Triggered at maximum Echo attunement
+   │  └─ Defeating it allows Echo reset
+   │
+   ├─ Echo Legacy Duel
+   │  ├─ Challenge the previous wielder's Echo
+   │  └─ Cosmetic reward: "[Archetype] Master"
+   │
+   ├─ Prestige / Rebirth Trial
+   │  ├─ Follows the Legacy Duel
+   │  ├─ Cosmetic-only reward: "True [Archetype] Master"
+   │  └─ Locks archetype for future runs
+   │
+   └─ True Jack of All Trades
+      ├─ Achieved by mastering all archetypes
+      └─ Cosmetic recognition with limited cross-archetype versatility
+</pre>
+</div>
+
+</div>
+
+</body>
+</html>
