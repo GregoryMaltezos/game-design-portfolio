@@ -41,11 +41,36 @@ section {
     color: #d4d7dd;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 22px;
-    margin-top: 30px;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+}
+
+.card{
+    background:#1B1F29;
+    border:1px solid #2D3442;
+    border-radius:16px;
+    padding:28px;
+    text-decoration:none;
+    color:#f1f1f1;
+    transition:.2s;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+
+    min-height:220px;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    border-color:#7aa2ff;
+}
+
+.card p{
+    color:#b8c0cc;
+    line-height:1.6;
 }
 
 .card {
