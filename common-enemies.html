@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Common Enemies | Echoes</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #111318;
+    color: #ECECEC;
+    font-family: Segoe UI, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px;
+}
+
+a {
+    color: #8FB0FF;
+    text-decoration: none;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #B8C0CC;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    max-width: 900px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #1B1F29;
+    border: 1px solid #2D3442;
+    border-radius: 20px;
+    padding: 32px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    border-color: #7AA2FF;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.card p,
+.card li {
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+.tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #8FB0FF;
+    font-weight: 600;
+}
+
+.quote {
+    margin-top: 28px;
+    background: #141821;
+    border-left: 4px solid #7AA2FF;
+    padding: 28px;
+    border-radius: 14px;
+    color: #D7DDE7;
+    font-style: italic;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="enemies.html">← Back to Enemy Design</a>
+
+<h1>Common Enemies</h1>
+
+<p class="intro">
+Common enemies are the baseline threats players encounter most frequently during runs. They establish the combat rhythm of each zone, teach core mechanics, and encourage careful positioning, stamina management, target prioritization, and resource control.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<span class="tag">Baseline Humanoid Threat</span>
+<h2>Shamblers</h2>
+<p>
+Shamblers are slow, corrupted humanoids that attack methodically and become dangerous in groups.
+</p>
+<ul>
+<li>Teach attack timing and defensive spacing.</li>
+<li>Pressure the player in confined spaces.</li>
+<li>Encourage stamina management and controlled positioning.</li>
+</ul>
+</div>
+
+<div class="card">
+<span class="tag">Flanker / Pressure Enemy</span>
+<h2>Skulkers</h2>
+<p>
+Skulkers are fast, agile enemies that attempt to flank the player and punish tunnel vision.
+</p>
+<ul>
+<li>Force awareness of surroundings.</li>
+<li>Create pressure when paired with Shamblers.</li>
+<li>Work well in corridors, chokepoints, and ambush spaces.</li>
+</ul>
+</div>
+
+<div class="card">
+<span class="tag">Ranged Control Enemy</span>
+<h2>Spinecasters</h2>
+<p>
+Spinecasters attack from range using echo-infused projectiles.
+</p>
+<ul>
+<li>Teach target prioritization.</li>
+<li>Encourage use of cover and movement.</li>
+<li>Control vertical areas, chokepoints, and static positions.</li>
+</ul>
+</div>
+
+<div class="card">
+<span class="tag">Rush / Grapple Predator</span>
+<h2>Thrash Beasts</h2>
+<p>
+Thrash Beasts are quadrupedal predators that rush and grapple the player.
+</p>
+<ul>
+<li>Have telegraphed but dangerous attacks.</li>
+<li>Break up humanoid-heavy encounters.</li>
+<li>Are especially threatening in open areas where mobility matters.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="quote">
+Common enemies provide predictable challenges that prepare the player for higher-risk encounters such as elites, minibosses, and boss-level threats.
+</div>
+
+</div>
+
+</body>
+</html>
