@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enemy Design | Echoes</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #111318;
+    color: #ECECEC;
+    font-family: Segoe UI, sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 60px;
+}
+
+a {
+    color: #8FB0FF;
+    text-decoration: none;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #B8C0CC;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    max-width: 900px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #1B1F29;
+    border: 1px solid #2D3442;
+    border-radius: 20px;
+    padding: 32px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #7AA2FF;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.card p {
+    color: #B8C0CC;
+    line-height: 1.7;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 12px;
+    color: #8FB0FF;
+    font-weight: 600;
+}
+
+.quote-card {
+    margin-top: 28px;
+    background: #141821;
+    border-left: 4px solid #7AA2FF;
+    padding: 28px;
+    border-radius: 14px;
+    color: #D7DDE7;
+    font-style: italic;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="index.html">← Back to Home</a>
+
+<h1>Enemy Design</h1>
+
+<p class="intro">
+The Enemy Design section defines the threats the player encounters, how they behave, and how they interact with Echoes' combat, extraction, and risk/reward systems. Enemies are designed to teach mechanics, escalate tension, create meaningful choices, and produce memorable encounters without relying only on narrative exposition.
+</p>
+
+<div class="grid">
+
+<a class="card" href="common-enemies.html">
+<h2>Common Enemies</h2>
+<p>
+Baseline threats encountered frequently during runs. They establish zone rhythm, teach combat fundamentals, and encourage positioning and resource management.
+</p>
+<span class="read-more">Read More →</span>
+</a>
+
+<a class="card" href="elite-enemies.html">
+<h2>Elite Enemies</h2>
+<p>
+Stronger, high-risk enemies that appear less often. Elites create deliberate tension spikes, optional challenges, and localized risk/reward moments.
+</p>
+<span class="read-more">Read More →</span>
+</a>
+
+<a class="card" href="minibosses.html">
+<h2>Minibosses</h2>
+<p>
+Rare thematic enemies tied to specific zones. Minibosses break pacing, provide significant loot, and act as optional mini-climaxes.
+</p>
+<span class="read-more">Read More →</span>
+</a>
+
+<a class="card" href="uber-boss.html">
+<h2>Uber Boss</h2>
+<p>
+One per map, designed as the run-ending challenge. The Uber Boss is highly telegraphed, extremely dangerous, and grants instant extraction and high-tier rewards.
+</p>
+<span class="read-more">Read More →</span>
+</a>
+
+<a class="card" href="player-specific-echo.html">
+<h2>Player-Specific Echo Encounters</h2>
+<p>
+Late-game mastery encounters tied to the player's Echo progression, designed to test archetype mastery and provide prestige-based rewards.
+</p>
+<span class="read-more">Read More →</span>
+</a>
+
+<div class="card">
+<h2>Corruption Variants</h2>
+<p>
+Any enemy can appear in a corruption-infused state, altering behavior, increasing threat, and rewarding higher-tier Echo progression. These variants create replay variety and reinforce the unstable nature of the world.
+</p>
+</div>
+
+<div class="card">
+<h2>Human / Faction Enemies</h2>
+<p>
+Rival extractors, cultists, or scavengers that behave more like players. They increase unpredictability and simulate emergent PvPvE scenarios.
+</p>
+</div>
+
+<div class="card">
+<h2>Design Purpose</h2>
+<p>
+Enemies support the core loop by creating pressure during exploration, forcing tactical combat decisions, threatening extraction, and rewarding players who understand positioning, timing, and risk.
+</p>
+</div>
+
+</div>
+
+<div class="quote-card">
+Enemies are not just obstacles. They are pressure tools that shape the player’s decisions during a run.
+</div>
+
+</div>
+
+</body>
+</html>
