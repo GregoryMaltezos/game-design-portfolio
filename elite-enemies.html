@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Enemies | Echoes</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #111318;
+    color: #ECECEC;
+    font-family: Segoe UI, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px;
+}
+
+a {
+    color: #8FB0FF;
+    text-decoration: none;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #B8C0CC;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    max-width: 900px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #1B1F29;
+    border: 1px solid #2D3442;
+    border-radius: 20px;
+    padding: 32px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    border-color: #7AA2FF;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.card p,
+.card li {
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+.tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #8FB0FF;
+    font-weight: 600;
+}
+
+.full-card {
+    margin-top: 28px;
+}
+
+.quote {
+    margin-top: 28px;
+    background: #141821;
+    border-left: 4px solid #7AA2FF;
+    padding: 28px;
+    border-radius: 14px;
+    color: #D7DDE7;
+    font-style: italic;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="enemies.html">← Back to Enemy Design</a>
+
+<h1>Elite Enemies</h1>
+
+<p class="intro">
+Elite enemies are stronger, less frequent threats that create deliberate tension spikes within a zone. They provide optional high-risk encounters, higher-tier rewards, and localized moments of risk versus reward. Elites often guard points of interest, valuable loot, or access to miniboss areas.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<span class="tag">Defensive Objective Guardian</span>
+<h2>Guardian Wraiths</h2>
+<p>
+Guardian Wraiths are heavily armored defensive humanoids that protect strategic points.
+</p>
+<ul>
+<li>Attack with precise, high-damage strikes.</li>
+<li>Can stagger the player if attacks connect.</li>
+<li>Are most dangerous in corridors, narrow rooms, or near objectives.</li>
+<li>Become less threatening in open spaces where the player can control spacing.</li>
+</ul>
+</div>
+
+<div class="card">
+<span class="tag">Heavy Melee Threat</span>
+<h2>Corrupted Brutes</h2>
+<p>
+Corrupted Brutes are large, stagger-resistant melee enemies with slow movement but powerful attacks.
+</p>
+<ul>
+<li>Force stamina management and careful attack timing.</li>
+<li>Are highly threatening in confined spaces.</li>
+<li>Pressure players who cannot maintain distance.</li>
+<li>Are easier to manage in open areas where kiting is possible.</li>
+</ul>
+</div>
+
+<div class="card">
+<span class="tag">Area Pressure / Summoning Threat</span>
+<h2>Shrieking Nodes</h2>
+<p>
+Shrieking Nodes are stationary corruption sources that emit loud, piercing screams.
+</p>
+<ul>
+<li>Draw nearby enemies toward their location.</li>
+<li>Create area-based pressure.</li>
+<li>Force players to decide whether to destroy them quickly or risk being overwhelmed.</li>
+<li>Teach battlefield control and spatial awareness.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="card full-card">
+<h2>How Elite Enemies Work Together</h2>
+
+<p>
+Elites are often combined with common enemies to create layered encounters. A Guardian Wraith may be supported by Shamblers to create frontline pressure, while a Shrieking Node can summon additional enemies and increase urgency.
+</p>
+
+<p>
+These combinations increase difficulty through composition and positioning rather than unfair stat inflation. Players are encouraged to plan engagement order, movement routes, resource usage, and escape options.
+</p>
+</div>
+
+<div class="card full-card">
+<h2>Design Purpose</h2>
+
+<ul>
+<li>Challenge players beyond basic combat fundamentals.</li>
+<li>Create optional risk/reward decisions within a run.</li>
+<li>Guard valuable resources, objectives, or miniboss access points.</li>
+<li>Reinforce the identity and danger profile of each zone.</li>
+<li>Create memorable encounters that stand out from common enemy fights.</li>
+</ul>
+</div>
+
+<div class="quote">
+Elite enemies are designed to make players stop, evaluate the situation, and decide whether the reward is worth the risk.
+</div>
+
+</div>
+
+</body>
+</html>
