@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level / Zone Design | Echoes</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #111318;
+    color: #ECECEC;
+    font-family: Segoe UI, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px;
+}
+
+a {
+    color: #8FB0FF;
+    text-decoration: none;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #B8C0CC;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    max-width: 900px;
+}
+
+.card {
+    background: #1B1F29;
+    border: 1px solid #2D3442;
+    border-radius: 20px;
+    padding: 32px;
+    margin-bottom: 28px;
+}
+
+.card:hover {
+    border-color: #7AA2FF;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.card h3 {
+    margin-top: 28px;
+    color: #DDE4F0;
+}
+
+.card p,
+.card li {
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.quote {
+    margin-top: 28px;
+    background: #141821;
+    border-left: 4px solid #7AA2FF;
+    padding: 28px;
+    border-radius: 14px;
+    color: #D7DDE7;
+    font-style: italic;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="index.html">← Back to Home</a>
+
+<h1>Level / Zone Design</h1>
+
+<p class="intro">
+Level and zone design defines map layout, enemy placement, environmental hazards, points of interest, and extraction routes. Zones are built to support multiple playstyles while creating risk/reward decisions through exploration, combat pressure, optional encounters, and extraction planning.
+</p>
+
+<div class="card">
+<h2>Zone Structure</h2>
+
+<p>
+Zones vary in size, shape, and tactical flow. Open areas favor ranged combat, mobility, and long sightlines, while confined corridors favor stealth, ambushes, melee pressure, and stamina management.
+</p>
+
+<ul>
+<li>Each zone contains points of interest, miniboss locations, and potential extraction nodes.</li>
+<li>Major landmarks remain static so players can learn the space over time.</li>
+<li>Optional areas, loot nodes, minor hazards, and patrol routes can shift between runs.</li>
+<li>Static structure supports mastery, while procedural variation keeps runs unpredictable.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Biomes</h2>
+
+<p>
+Each biome has a distinct visual and mechanical identity, affecting enemy types, pacing, hazards, and player movement.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Ruined City</h3>
+<p>
+Collapsed buildings, alleyways, rooftops, verticality, and chokepoints. Supports ambushes, traversal decisions, and close-quarters combat.
+</p>
+</div>
+
+<div class="card">
+<h3>Corrupted Forest</h3>
+<p>
+Dense vegetation, limited sightlines, hazard plants, hidden paths, and ambush-heavy movement. Supports stealth, tracking, and spatial awareness.
+</p>
+</div>
+
+<div class="card">
+<h3>Abandoned Industrial Site</h3>
+<p>
+Machinery, catwalks, tight corridors, loud surfaces, and mechanical hazards. Supports verticality, traps, and controlled encounter spaces.
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2>Procedural vs Handcrafted Elements</h2>
+
+<h3>Static Elements</h3>
+<ul>
+<li>Major landmarks.</li>
+<li>Miniboss arenas.</li>
+<li>Important chokepoints.</li>
+<li>Primary extraction node locations.</li>
+<li>Core zone identity and traversal routes.</li>
+</ul>
+
+<h3>Procedural Elements</h3>
+<ul>
+<li>Loot placement.</li>
+<li>Minor enemy patrols.</li>
+<li>Optional hazards.</li>
+<li>Resource nodes.</li>
+<li>Small encounter variations.</li>
+</ul>
+
+<p>
+The goal is to preserve navigational learning while keeping each run from becoming fully predictable.
+</p>
+</div>
+
+<div class="card">
+<h2>Environmental Hazards</h2>
+
+<p>
+Zones include hazards that affect movement, combat, visibility, and enemy/player awareness.
+</p>
+
+<ul>
+<li><strong>Corruption Storms:</strong> temporary area pressure that forces movement or shelter.</li>
+<li><strong>Alarm Plants:</strong> environmental triggers that alert nearby enemies or players.</li>
+<li><strong>Unstable Terrain:</strong> collapsing floors, weak bridges, or dangerous footing.</li>
+<li><strong>Falling Debris:</strong> telegraphed hazards that punish poor positioning.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Points of Interest</h2>
+
+<p>
+Points of interest give players reasons to explore beyond the safest path.
+</p>
+
+<ul>
+<li>Ruins.</li>
+<li>Crashed caravans.</li>
+<li>Temples.</li>
+<li>Failed extraction sites.</li>
+<li>Elite enemy positions.</li>
+<li>High-value resource locations.</li>
+</ul>
+
+<p>
+POIs may contain minibosses, elite enemies, rare resources, lore fragments, or mini quest objectives.
+</p>
+</div>
+
+<div class="card">
+<h2>Extraction Design</h2>
+
+<ul>
+<li>Extraction nodes are fixed in the map layout but rotate between runs.</li>
+<li>Players may need to survive a timer, hold an area, or defend against enemy waves.</li>
+<li>High-risk extraction routes can provide better loot, stronger Echo progression, or faster escape.</li>
+<li>Extraction locations are placed to create routing decisions rather than simple exits.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Uber Boss Integration</h2>
+
+<p>
+Uber Boss mini quest locations are embedded into points of interest. This encourages exploration and gives ambitious players a clear route toward high-risk optional content.
+</p>
+
+<ul>
+<li>The Uber Boss can only be summoned in valid open spaces.</li>
+<li>Summoning creates a visible and audible escalation moment.</li>
+<li>Defeating the boss opens instant extraction and grants high-tier rewards.</li>
+<li>The system turns specific locations into potential climactic encounter spaces.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Environmental Enemy Variants</h2>
+
+<p>
+Enemies can appear as biome-specific variants depending on where they spawn. These variants change encounter behavior without creating entirely new enemy classes.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Industrial Variant</h3>
+<ul>
+<li><strong>Strength:</strong> higher armor and reduced physical damage taken.</li>
+<li><strong>Weakness:</strong> louder movement, easier detection, and slower mobility.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Jungle / Corrupted Forest Variant</h3>
+<ul>
+<li><strong>Strength:</strong> blends into foliage and is harder to spot.</li>
+<li><strong>Weakness:</strong> lower armor and greater vulnerability to slashing or piercing attacks.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Ruined City Variant</h3>
+<ul>
+<li><strong>Strength:</strong> higher mobility and better obstacle navigation.</li>
+<li><strong>Weakness:</strong> shorter attack range due to cluttered terrain.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Snow / Wasteland Variant</h3>
+<ul>
+<li><strong>Strength:</strong> resistant to cold and environmental effects.</li>
+<li><strong>Weakness:</strong> slower attack speed and reduced stamina recovery.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2>Design Intent</h2>
+
+<p>
+Zones are designed to create readable but unpredictable spaces. Players should learn landmarks, understand biome identity, and make informed routing decisions while still facing enough variation to keep each run tense.
+</p>
+
+<div class="quote">
+The map should feel learnable, but never fully safe.
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
