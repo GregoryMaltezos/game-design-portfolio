@@ -6,97 +6,115 @@
 <title>Gameplay Systems | Echoes</title>
 
 <style>
-* {
-    box-sizing: border-box;
+
+*{
+box-sizing:border-box;
 }
 
-body {
-    margin: 0;
-    background: #111318;
-    color: #ECECEC;
-    font-family: Segoe UI, sans-serif;
+body{
+margin:0;
+background:#111318;
+color:#ECECEC;
+font-family:Segoe UI,sans-serif;
 }
 
-.container {
-    max-width: 1150px;
-    margin: auto;
-    padding: 60px;
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px;
 }
 
-a {
-    color: #8FB0FF;
-    text-decoration: none;
+a{
+text-decoration:none;
+color:#8FB0FF;
 }
 
-.back {
-    display: inline-block;
-    margin-bottom: 40px;
-    font-size: 18px;
+.back{
+display:inline-block;
+margin-bottom:40px;
+font-size:18px;
 }
 
-h1 {
-    font-size: 52px;
-    margin-bottom: 15px;
+h1{
+font-size:56px;
+margin-bottom:18px;
 }
 
-.intro {
-    color: #B8C0CC;
-    line-height: 1.8;
-    margin-bottom: 34px;
-    max-width: 850px;
+.intro{
+color:#B8C0CC;
+line-height:1.8;
+max-width:900px;
+margin-bottom:40px;
 }
 
-.quote-card {
-    background: #141821;
-    border-left: 4px solid #7AA2FF;
-    padding: 26px 30px;
-    border-radius: 14px;
-    color: #D7DDE7;
-    font-style: italic;
-    max-width: 850px;
-    margin-bottom: 50px;
+.quote-card{
+background:#141821;
+border-left:4px solid #7AA2FF;
+padding:24px 30px;
+border-radius:14px;
+font-style:italic;
+color:#D7DDE7;
+max-width:850px;
+margin-bottom:60px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
+.row{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-bottom:25px;
 }
 
-.card {
-    background: #1B1F29;
-    border: 1px solid #2D3442;
-    border-radius: 20px;
-    padding: 32px;
-    transition: .2s;
-    display: flex;
-    flex-direction: column;
-    min-height: 320px;
+.card{
+background:#1B1F29;
+border:1px solid #2D3442;
+border-radius:20px;
+padding:32px;
+width:360px;
+min-height:290px;
+display:flex;
+flex-direction:column;
+transition:.2s;
 }
 
-.card:hover {
-    transform: translateY(-4px);
-    border-color: #7AA2FF;
+.card.large{
+width:450px;
 }
 
-.card h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 28px;
+.card:hover{
+transform:translateY(-4px);
+border-color:#7AA2FF;
 }
 
-.card p {
-    color: #B8C0CC;
-    line-height: 1.8;
-    margin-bottom: 18px;
+.card h2{
+margin-top:0;
+font-size:32px;
 }
 
-.read-more {
-    margin-top: auto;
-    display: inline-block;
-    color: #8FB0FF;
-    font-weight: 600;
+.card p{
+color:#B8C0CC;
+line-height:1.8;
 }
+
+.read-more{
+margin-top:auto;
+font-weight:600;
+}
+
+@media(max-width:1150px){
+
+.row{
+flex-wrap:wrap;
+}
+
+.card,
+.card.large{
+width:100%;
+max-width:500px;
+}
+
+}
+
 </style>
 </head>
 
@@ -104,7 +122,9 @@ h1 {
 
 <div class="container">
 
-<a class="back" href="index.html">← Back to Home</a>
+<a class="back" href="index.html">
+← Back to Home
+</a>
 
 <h1>Gameplay Systems</h1>
 
@@ -113,64 +133,117 @@ Echoes is built around interconnected systems where preparation, combat, loot co
 </p>
 
 <div class="quote-card">
-“Do I leave now with what I have, or risk everything for something better?”
+"Do I leave now with what I have, or risk everything for something better?"
 </div>
 
-<div class="grid">
 
-<div class="card">
+<!-- Top -->
+<div class="row">
+
+<div class="card large">
+
 <h2>Core Loop</h2>
+
 <p>
 Prepare → Enter → Fight → Loot → Extract → Upgrade → Repeat.
 </p>
+
 <p>
 Each run asks the player to balance safety, greed, progression, and survival.
 </p>
-<a class="read-more" href="loop.html">Read More →</a>
+
+<a class="read-more" href="loop.html">
+Read More →
+</a>
+
 </div>
 
+</div>
+
+
+<!-- Middle -->
+<div class="row">
+
 <div class="card">
+
 <h2>Combat System</h2>
+
 <p>
 Combat is designed around timing, stamina management, positioning, dodges, parries, and commitment.
 </p>
+
 <p>
 Success comes from reading enemies, managing stamina, and understanding risk rather than overwhelming power.
 </p>
-<a class="read-more" href="combat.html">Read More →</a>
+
+<a class="read-more" href="combat.html">
+Read More →
+</a>
+
 </div>
 
+
+
 <div class="card">
+
 <h2>Echo System</h2>
+
 <p>
 Weapons contain Echoes: traces of previous owners.
 </p>
+
 <p>
 Using weapons gradually transforms the player through memory, familiarity, and evolution.
 </p>
-<a class="read-more" href="echo-system.html">Read More →</a>
+
+<a class="read-more" href="echo-system.html">
+Read More →
+</a>
+
 </div>
 
+</div>
+
+
+<!-- Bottom -->
+<div class="row">
+
 <div class="card">
+
 <h2>Extraction Mechanics</h2>
+
 <p>
 Loot, Echo progress, and long-term growth are secured only if the player survives and extracts successfully.
 </p>
+
 <p>
 Failure introduces corruption and instability, making every decision meaningful.
 </p>
-<a class="read-more" href="extraction.html">Read More →</a>
+
+<a class="read-more" href="extraction.html">
+Read More →
+</a>
+
 </div>
 
+
+
 <div class="card">
+
 <h2>Progression & Upgrades</h2>
+
 <p>
 Progression is tied to loot, weapon familiarity, Echo evolution, and hub upgrades.
 </p>
+
 <p>
 Players become stronger through mastery and survival rather than traditional leveling.
 </p>
-<a class="read-more" href="progression.html">Read More →</a>
+
+<a class="read-more" href="progression.html">
+Read More →
+</a>
+
 </div>
 
 </div>
